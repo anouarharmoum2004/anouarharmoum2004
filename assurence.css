@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Brandon&family=Roboto:wght@400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+nav {
+   height: 80px;
+   background-color: #fff;
+   font-family: 'Brandon', sans-serif;
+  
+   margin-bottom: 100px;
+   padding: 10px;
+   display: flex;
+}
+
+
+.text-container {
+   position: absolute;
+   top: -35px; /* Adjust the top value as needed */
+   left: 50%;
+   transform: translateX(-50%);
+   color: #fff;
+   text-align: center;
+}
+
+h1 {
+   color: #fff;
+   margin: 0;
+   font-size: 60px;
+   margin-bottom: 10px;
+   margin-top: 150px;
+   font-weight: 500;
+}
+
+
+h2 {
+   color: #333;
+   margin: 0;
+   font-size: 24px;
+}
+
+section {
+   padding: 40px;
+   text-align: center;
+}
+
+footer {
+   background-color: #333 ;
+   color: #fff;
+   padding: 15px;
+   text-align: center;
+}
+nav h3 {
+   float: left;
+   font-size: 10px;
+   color: black;
+ 
+   
+   padding: 0;
+   line-height: 80px;
+   margin-left: 15px; 
+}
+
+nav ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+  
+   margin-top: 80px;
+   margin-left: 35px;
+   padding: 3rem;
+}
+
+nav ul li {
+   margin: 0 10px;
+}
+
+nav ul li a {
+   color: #333;
+   text-decoration: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   text-decoration: none;
+   transition: background-color 0.3s ease;
+   font-size: 19px;
+}
+
+nav ul li a:hover {
+   background-color: #555;
+}
+
+nav ul li a.active {
+   color: #00abf0;
+}
+
+header {
+   background-image: url("img/home.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   padding: 20px;
+   text-align: center;
+   position: relative;
+ 
+}
+
+/* -------------------- logo  ------------------------------------------------------------------------ */
+.logo {
+   display: flex;
+   align-items: center;
+   color: #fff;
+   font-size: 4rem;
+   text-transform: uppercase;
+   height: 150px;
+   letter-spacing: 2px;
+   transition: 0.6s;
+   font-weight: 700;
+   position: absolute;
+   top: -50px;
+   left: 35px;
+   margin-top: 30px;
+}
+.logo img {
+   height: 150px;
+   margin-right: 10px;
+ 
+}
+
+
+/* -------------------- services  ------------------------------------------------------------------------ */
+
+#services {
+   padding: 5rem 0;
+   background-color: #f8f8f8;
+   text-align: center;
+}
+
+#services h2 {
+   margin-bottom: 4rem;
+   color: #333;
+}
+
+.service {
+   display: inline-block;
+   text-align: center;
+   max-width: 300px;
+   margin: 20px;
+   padding: 20 px;
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+ 
+
+}
+.service.animate {
+   opacity: 1;
+   transform: translateX(0);
+}
+
+
+
+.service img {
+   width: 100%;
+   max-height: 250px; /* Increase the max-height to make the image bigger */
+   object-fit: cover;
+   margin-bottom: 10px; /* Add spacing between the image and the title/description */
+}
+
+.service h3 {
+   margin-bottom: 1rem; /* Reduce the spacing between the title and the description */
+   color: #333;
+}
+
+.service p {
+   margin-bottom: 10px; /* Add spacing between the description paragraphs */
+   color: #777;
+   text-align: center;
+}
+
+.arrow {
+   padding-right: 5px;
+}
+
+/* -------------------- About   ------------------------------------------------------------------------ */
+
+#about{
+   padding:50 px 8%
+}
+#about img {
+   display: block;
+   margin: 50px auto 0; /* Set top margin to 50px and use auto for left and right margins */
+}
+
+.learn-more {
+   text-decoration: none;
+   display: inline-flex;
+   align-items: center;
+   font-weight: bold;
+   color: #0096c7; /* Change the color to a light blue shade */
+}
+
+
+
+.about-content p {
+   margin-top: 20px;
+   font-family: "Helvetica Neue", Arial, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #333;
+}
+
+/* --------------------contact us  ------------------------------------------------------------------------ */
+#contact {
+   padding: 20px;
+}
+
+#contact h2 {
+   text-align: center;
+   color: #333;
+}
+
+.contact-content {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+.map-container {
+   flex-basis: 60%;
+   height: 300px;
+}
+
+.contact-info {
+   flex-basis: 35%;
+   background-color: #f5f5f5;
+   padding: 20px;
+}
+
+.contact-info p {
+   margin-bottom: 10px;
+}
+
+.contact-info strong {
+   font-weight: bold;
+}
+/* --------------------map  contact us  ------------------------------------------------------------------------ */
+
+.container {
+   background: cadetblue;
+   width: 900px;
+   height: 650px;
+   margin: 5% auto;
+   box-shadow: 0px 0px 10px black;
+   position: relative;
+ }
+ 
+ .container .map {
+   width: 50%;
+   float: left;
+   height: 100%;
+ }
+ 
+ .container .map iframe {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .container .contact-form {
+   width: 50%;
+   float: right; /* Change float to right */
+   padding: 20px; /* Add padding to the contact form */
+   box-sizing: border-box; /* Include padding in the width calculation */
+ }
+ 
+ .container .contact-form .title {
+   font-size: 2.5em;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   color: white;
+   margin: 0 0 50px 20px; /* Add left margin */
+ }
+ 
+ .container .contact-form .btn-send {
+   border-radius: 7px;
+   background: darkslategray;
+   width: 120px;
+   height: 50px;
+   color: whitesmoke;
+   font-weight: 600;
+   font-size: 20px;
+   margin-top: 10px; /* Adjust margin for spacing */
+   margin-left: 25px; /* Add left margin */
+   border: none;
+ }
+ 
+ .container .contact-form .subtitle {
+   font-size: 1.2em;
+   font-weight: 400;
+   margin: 0 0 20px; /* Adjust margin for spacing */
+   color: white;
+ }
+ 
+ .container .contact-form input,
+ .container .contact-form textarea {
+   width: 100%;
+   padding: 3%;
+   margin-bottom: 10px; /* Adjust margin for spacing */
+   color: #242424;
+   border: 1px solid gray;
+   border-radius: 7px;
+   margin-right: 10px;
+ }
+ 
+ .container .contact-form input::placeholder,
+ .container .contact-form textarea::placeholder {
+   color: grey;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ 
+ 
+ input,
+ textarea {
+   outline-color: dimgray;
+   background-color: honeydew;
+ }
+ /* --------------------icons fb insta ----------------- */
+
+ #contact .reach-us {
+   text-align: center;
+   margin-top: 30px;
+ }
+
+ #contact .reach-us hr {
+   width: 50%;
+   margin: 0 auto;
+   border: none;
+   border-top: 2px solid #777;
+   position: relative;
+ }
+
+ #contact .reach-us h2 {
+   position: absolute;
+   top: -20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #f8f8f8;
+   padding: 0 10px;
+   color: #333;
+   font-size: 1rem;
+   font-weight: normal;
+ }
+.social-icons {
+   display: inline-block;
+   margin-top: 10px;
+}
+
+.social-icons a {
+   display: inline-block;
+   margin: 0 5px;
+}
+
+.social-icons img {
+   height: 30px;
+   width: 30px;
+}
+
+.social-icons img {
+   width: 30px;
+   height: 30px;
+   margin-right: 10px;
+   
+ }
+
+ 
